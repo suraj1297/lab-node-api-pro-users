@@ -1,7 +1,7 @@
 const { model, mongo } = require("mongoose")
 const mongoose = require("mongoose")
 
-const url = `mongodb+srv://admin:root@testing.l4cpi.mongodb.net/prograd?retryWrites=true&w=majority`
+const url = process.env.URL
 
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
